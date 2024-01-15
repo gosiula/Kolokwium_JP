@@ -1,14 +1,13 @@
 package org.example.Main;
 
-import org.example.Components.AddingButton;
+//import org.example.Components.AddingButton1;
+import org.example.Components.AddingButton1;
 import org.example.Components.ComponentsPanel;
 import org.example.Components.DrawingPanel;
 import org.example.Components.Header;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 // MAIN PANEL WITH ALL COMPONENTS
 public class MainPanel extends JPanel {
@@ -32,16 +31,16 @@ public class MainPanel extends JPanel {
         ComponentsPanel buttonPanel = new ComponentsPanel(0, 520);
         ComponentsPanel headerPanel = new ComponentsPanel(0, 0);
         Header header = new Header();
-        AddingButton button1 = new AddingButton("dodaj przewod", drawingPanel, "przewod");
-        AddingButton button2 = new AddingButton("dodaj opornik", drawingPanel, "opornik");
-        AddingButton button3 = new AddingButton("dodaj ogniwa", drawingPanel, "ogniwo");
+        AddingButton1 button1 = new AddingButton1("dodaj przewod", drawingPanel);
+      //  AddingButton1 button2 = new AddingButton1("dodaj opornik", drawingPanel, "opornik");
+       // AddingButton1 button3 = new AddingButton1("dodaj ogniwa", drawingPanel, "ogniwo");
         add(drawingPanel);
         add(buttonPanel);
         add(headerPanel);
         headerPanel.add(header);
         buttonPanel.add(button1);
-        buttonPanel.add(button2);
-        buttonPanel.add(button3);
+       // buttonPanel.add(button2);
+        //buttonPanel.add(button3);
 
 
     }
