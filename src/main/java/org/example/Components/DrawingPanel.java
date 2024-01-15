@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.awt.event.MouseEvent;
-
+//
 public class DrawingPanel extends JPanel {
     private List<CircuitElement> elements = new ArrayList<>();
     private boolean dragging = false;
